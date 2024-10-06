@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "averta cy w10";
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: beige;
+}
+
+.container {
+    height: auto;
+    width: auto;
+    padding: 20px;
+}
+
+.li{
+    display: flex;
+    margin-left: 3vw;
+}
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  rgba(237, 230, 230, 0.674);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 3vw;
+}
+
+.search-bar input, .search-bar select {
+    width: 30%;
+    margin: 0.5vw;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    margin: 0.5vw;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+/* Job Listing Cards */
+.job-card {
+    background-color:  rgba(237, 230, 230, 0.674);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin: 2vw 5vw 0 5vw;
+}
+
+.job-details h3 {
+    padding: 10px;
+}
+
+.job-card .tags {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.tag {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.salary {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.apply-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    float: right;
+}
+
+.apply-button:hover {
+    background-color: #0056b3;
+}
+
+.job-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-job-container {
+    text-align: center;
+}
+
+.post-job-button {
+    background-color: #007bff; /* Bright blue color */
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.post-job-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.post-job-button i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.quote {
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 50px;
+    background-color: #d7d1c3ea;
+}
+
+#nav img {
+    width: 100px;
+}
+
+#nav #right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#nav a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #000;
+    font-size: 0.8rem;
+    letter-spacing: -1px;
+}
+@media (min-width: 768px) {
+    #nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px 50px;
+    }
+
+    #nav img {
+        width: 100px;
+    }
+
+    #nav a {
+        font-size: 1.5vw;
+    }
+    #nav i {
+        font-size: 1.5vw;
+    }
+
+}
+#nav i {
+    font-weight: 100px;
+    font-size: 1rem;
+}
+
+#right a.login-btn {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border-radius: 25px;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#right a.login-btn:hover {
+    color: black;
+    background-color: #ffffff; 
+}
+
+
+/*-------Contact Us--------*/
+.container {
+    width: auto;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+.vertical-logo {
+    font-size: 2.5vw;
+}
+.grid-container {
+    margin:4vw ;
+    height: auto;
+    align-items: center;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.grid-item {
+    background-color:  rgba(237, 230, 230, 0.674);
+    padding: 20px;
+    border-radius: 10px;
+}
+.grid-item h2 {
+    margin-bottom: 20px;
+}
+.grid-item a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    margin: 10px 0;
+}
+.grid-item a:hover {
+    text-decoration: underline;
+}
+.footer {
+    margin-top: 50px;
+    font-size: 12px;
+    color: #333;
+    font-size: 1rem;
+}
+.social-media {
+    margin-top: 30px;
+}
+.social-media a {
+    margin: 0 10px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+.social-media a:hover {
+    color: #000;
+}
