@@ -59,5 +59,5 @@ lumina/
 
 ## 👤 Author
 
-This project was created by **Abhay Gupta**. Feel free to connect on [LinkedIn]() or check out more projects on [GitHub](#).
+This project was created by **Abhay Gupta**. Feel free to connect on [LinkedIn](https://www.linkedin.com/in/abhay-gupta-1257b6248/) or check out more projects on [GitHub](https://github.com/Abhay-hack/Lumina).
 
