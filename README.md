@@ -45,8 +45,8 @@ lumina/
 ├── public/
 │   └── index.css
 │   └── index.html          
-├── font/
-├── image/              # Icon, Image and Video assets used in the project
+├── font
+├── image               # Icon, Image and Video assets used in the project
 └── README.md           # Project documentation
 ```
 
