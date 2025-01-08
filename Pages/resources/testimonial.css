@@ -63,11 +63,11 @@ body{
 }
 
 
-/
 
-/ .section_grid .section_card {
-    flex: 0 0 auto; /* Ensure cards do not grow or shrink */
-}
+/*
+.section_grid .section_card {
+    flex: 0 0 auto; 
+}*/
 
 .section_grid{
     display: flex; /* Use flexbox to arrange cards in a line */
