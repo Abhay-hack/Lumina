@@ -473,6 +473,7 @@ html, body {
     overflow: hidden;
     background-color: #fff;
     border-radius: 0 0 5px 5px;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
 }
 
 .faq-answer p {
