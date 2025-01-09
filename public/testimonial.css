@@ -20,15 +20,15 @@ body{
     background-color: var(--section-bg-color);
 }
 
- .section_container{
+.section_container{
     max-width: 1200px;
     margin: auto;
     
     text-align: center;
     animation: fadeIn 1s ease-in-out;
     padding: 0px;
-    margin-left: -181px;
-    margin-right: -163px;
+    /* margin-left: -181px;
+    margin-right: -163px; */
 }
 
 
@@ -63,9 +63,9 @@ body{
 }
 
 
-/
 
-/ .section_grid .section_card {
+
+.section_grid .section_card {
     flex: 0 0 auto; /* Ensure cards do not grow or shrink */
 }
 
