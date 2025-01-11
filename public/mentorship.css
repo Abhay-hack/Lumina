@@ -253,3 +253,25 @@ html, body {
 .vertical-logo {
     font-size: 2.5vw;
 }
+#heading{
+    text-align: center;
+    margin-top: 20px;
+}
+.airecommendation-btn {
+    display: inline-block;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.airecommendation-btn:hover {
+    background-color: #fff;
+    color: #013D4D;
+    border: 1px solid #013D4D;
+}
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Career Recommendations</title>
+    <link rel="stylesheet" href="Ai-carrer-recommendation.css">
+</head>
+<body>
+    <div id="nav">
+        <a href="index.html"><img class="icon magnet" src="./image/lumina1.png" alt="LUMINA"></a>
+        <div id="right">
+            <a href="jobs.html">Jobs</a>
+            <a href="internships.html">Internships</a>
+            <a href="mentorship.html">Mentorships</a>
+            <a href="resources.html">Resources</a>
+            <a href="events&webinar.html">Events/Webinars</a>
+            <a href="login.html" class="login-btn magnet">Login</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>AI Career Recommendation</h1>
+        <form id="career-form">
+            <label for="education-level">Current Level of Education:</label>
+            <select id="education-level" name="education-level">
+                <option value="high-school">High School</option>
+                <option value="undergraduate">Undergraduate</option>
+                <option value="postgraduate">Postgraduate</option>
+                <option value="professional">Professional</option>
+            </select>
+
+            <label for="field-of-study">Field of Study:</label>
+            <input type="text" id="field-of-study" name="field-of-study" placeholder="e.g., Computer Science, Business">
+
+            <label for="career-stage">Current Career Stage:</label>
+            <select id="career-stage" name="career-stage">
+                <option value="student">Student</option>
+                <option value="entry-level">Entry Level</option>
+                <option value="mid-level">Mid Level</option>
+                <option value="senior-level">Senior Level</option>
+            </select>
+
+            <label for="constraints">Constraints:</label>
+            <textarea id="constraints" name="constraints" placeholder="e.g., Remote work preference, limited time"></textarea>
+
+            <label for="goals">Career Goals:</label>
+            <textarea id="goals" name="goals" placeholder="e.g., Become a data scientist, start a business"></textarea>
+
+            <button type="submit">Get Recommendations</button>
+        </form>
+
+        <!-- Recommendation Text Section -->
+        
+    </div>
+
+    <div class="roadmap-container">
+        <h2>Your Career Roadmap</h2>
+        <div id="rot">
+            <p id="recommendation-text">Submit your details to receive a tailored career roadmap.</p>
+        </div>
+    </div>
+
+    <script src="Ai-carrer-recommendation.js"></script>
+</body>
+</html>
