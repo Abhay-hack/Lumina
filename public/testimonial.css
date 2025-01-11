@@ -22,13 +22,11 @@ body{
 
 .section_container{
     max-width: 1200px;
-    margin: auto;
+    margin: 6rem auto 2rem auto;
     
     text-align: center;
     animation: fadeIn 1s ease-in-out;
     padding: 0px;
-    /* margin-left: -181px;
-    margin-right: -163px; */
 }
 
 
