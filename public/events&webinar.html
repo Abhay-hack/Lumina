@@ -5,74 +5,293 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/image/Lumina.ico" />
-    <link rel="stylesheet" href="events&webinar.css" />
-    <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <title>Events & Webinars</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #F7F7B2;
+            color: black;
+            line-height: 1.6;
+        }
+
+        #nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #F7E3B1;
+            padding: 1rem 5%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #nav img {
+            height: 50px;
+        }
+
+        #right {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        #nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.3rem;
+            transition: all 0.3s ease;
+        }
+
+        #nav a:hover {
+            color: #555;
+        }
+
+        .login-btn {
+            padding: 0.5rem 1rem;
+            background-color: black;
+            color: #F7F7B2 !important;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .login-btn:hover {
+            background-color: #333;
+        }
+
+        #main {
+            padding: 2rem 5%;
+        }
+
+        h1 {
+            text-align: center;
+            color: black;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .event {
+            background-color: #F7E3B1;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .event:hover {
+            transform: translateY(-5px);
+        }
+
+        .event h2 {
+            color: black;
+            margin-bottom: 0.5rem;
+        }
+
+        .event p {
+            color: #333;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .add-button {
+            display: block;
+            width: 200px;
+            margin: 2rem auto;
+            padding: 0.75rem 1.5rem;
+            background-color: black;
+            color: #F7F7B2;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-button:hover {
+            background-color: #333;
+        }
+
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #F7F7B2;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 400px;
+            z-index: 1000;
+            padding: 2rem;
+        }
+
+        .modal-header {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            color: black;
+            text-align: center;
+        }
+
+        .modal input,
+        .modal textarea {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            background-color: white;
+        }
+
+        .modal button {
+            width: 100%;
+            padding: 0.75rem;
+            background-color: black;
+            color: #F7F7B2;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .modal button:hover {
+            background-color: #333;
+        }
+
+        @media (max-width: 768px) {
+            #nav {
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            #right {
+                margin-top: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            #nav a {
+                font-size: 0.9rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div id="nav">
-        <a href="index.html"><img class="icon magnet" src="./image/lumina1.png" alt=""></a>
+        <a href="index.html"><img class="icon" src="./image/lumina1.png" alt="Lumina"></a>
         <div id="right">
             <a href="jobs.html">Jobs</a>
             <a href="internships.html">Internships</a>
             <a href="mentorship.html">Mentorships</a>
             <a href="resources.html">Resources</a>
             <a href="events&webinar.html">Events/Webinars</a>
-            <a href="login.html" class="login-btn magnet">Login</a>
-            <!--
-            <i class="ri-user-3-line magnet"></i>
-        -->
+            <a href="login.html" class="login-btn">Login</a>
         </div>
     </div>
     <div id="main">
-        <div id="home">
-                <h1 class="">Upcoming Webinars & Events</h1>
-            
-            <div class="homemain">
-               
-                <div class="container">
-                    <section class="event">
-                        <h2>Webinar: Introduction to HTML</h2>
-                        <p style="font-size: 18px;">Date: October 15, 2023</p>
-                        <p style="font-size: 18px;">Time: 10:00 AM - 11:00 AM</p>
-                        <p style="font-size: 18px;">Description: Learn the basics of HTML in this introductory webinar.</p>
-                        <button class="register-button">Register Now</button>
-                    </section>
-                    <section class="event">
-                        <h2>Event: JavaScript Workshop</h2>
-                        <p style="font-size: 18px;">Date: October 20, 2023</p>
-                        <p style="font-size: 18px;">Time: 2:00 PM - 5:00 PM</p>
-                        <p style="font-size: 18px;">Description: Join us for a hands-on workshop on JavaScript.</p>
-                        <button class="register-button">Register Now</button>
-                    </section>
-
-                    <div style="text-align: center;">
-                        <button class="add-button">Add Event/Webinar</button>
-                    </div>
-                <form action="submit_event.html" method="post"></form>
-                
-                </section>
-                </div>
-            </div>
+        <h1>Upcoming Webinars & Events</h1>
+        <div class="container" id="events-container">
+            <section class="event">
+                <h2>Webinar: Introduction to HTML</h2>
+                <p>Date: October 15, 2023</p>
+                <p>Time: 10:00 AM - 11:00 AM</p>
+                <p>Description: Learn the basics of HTML in this introductory webinar.</p>
+            </section>
         </div>
+        <button class="add-button">Add Event/Webinar</button>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
-      <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
 
-      <script>
-        document.addEventListener("DOMContentLoaded", function() {
-          if (typeof Shery !== 'undefined') {
-              Shery.mouseFollower();
-              Shery.makeMagnet(".magnet");
-          } else {
-              console.error("Shery is not defined.");
-          }
+    <!-- Modal HTML -->
+    <div class="modal-overlay"></div>
+    <div class="modal" id="add-event-modal">
+        <div class="modal-header">Add Event/Webinar</div>
+        <form id="add-event-form">
+            <input type="text" id="event-title" placeholder="Event Title" required />
+            <input type="date" id="event-date" required />
+            <input type="time" id="event-time" required />
+            <textarea id="event-description" placeholder="Event Description" rows="4" required></textarea>
+            <button type="submit">Add Event</button>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const modal = document.getElementById("add-event-modal");
+            const overlay = document.querySelector(".modal-overlay");
+            const addButton = document.querySelector(".add-button");
+            const eventsContainer = document.getElementById("events-container");
+            const form = document.getElementById("add-event-form");
+
+            // Open Modal
+            addButton.addEventListener("click", () => {
+                modal.style.display = "block";
+                overlay.style.display = "block";
+            });
+
+            // Close Modal on Overlay Click
+            overlay.addEventListener("click", () => {
+                modal.style.display = "none";
+                overlay.style.display = "none";
+            });
+
+            // Form Submission
+            form.addEventListener("submit", (e) => {
+                e.preventDefault();
+
+                // Get form values
+                const title = document.getElementById("event-title").value;
+                const date = document.getElementById("event-date").value;
+                const time = document.getElementById("event-time").value;
+                const description = document.getElementById("event-description").value;
+
+                // Create new event HTML
+                const newEvent = document.createElement("section");
+                newEvent.classList.add("event");
+                newEvent.innerHTML = `
+                    <h2>${title}</h2>
+                    <p>Date: ${date}</p>
+                    <p>Time: ${time}</p>
+                    <p>Description: ${description}</p>
+                `;
+
+                // Add event to the container
+                eventsContainer.appendChild(newEvent);
+
+                // Close modal and reset form
+                modal.style.display = "none";
+                overlay.style.display = "none";
+                form.reset();
+            });
         });
     </script>
-    <script src="//code.tidio.co/jrwlyr4jlffbfwi1ogzqdzvxf34j4txb.js" async></script>
 </body>
 
 </html>
