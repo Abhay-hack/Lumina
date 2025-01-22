@@ -194,7 +194,7 @@ body{
 #nav #right {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
 }
 
 #nav a {
@@ -241,7 +241,7 @@ body{
     background-color: #000000;
     color: white;
     border-radius: 25px;
-    font-size: 1rem;
+    font-size: 1.6rem;
     text-decoration: none;
     font-weight: bold;
 }
@@ -250,7 +250,6 @@ body{
     color: black;
     background-color: #ffffff;
 }
-
 
 /*-------Contact Us--------*/
 .container {

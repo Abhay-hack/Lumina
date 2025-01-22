@@ -27,16 +27,9 @@ body {
 #nav {
   display: flex;
   align-items: center;
-  background-color: #f7e2b1ea;
   justify-content: space-between;
   width: 100%;
-  padding: 30px 50px;
-  height: 17%;
-
-}
-
-.icon {
-  font-size: medium;
+  background-color: #f7e2b1ea;
 }
 
 #nav img {
@@ -53,7 +46,7 @@ body {
 #nav a {
   text-decoration: none;
   font-weight: 400;
-  color: black;
+  color: #000;
   font-size: 0.8rem;
   letter-spacing: -1px;
   transition: font-size 0.3s;
@@ -65,29 +58,34 @@ body {
 
 @media (min-width: 768px) {
   #nav {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 30px 50px;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 30px 50px;
   }
 
   #nav img {
-    width: 100px;
+      width: 100px;
   }
 
   #nav a {
-    font-size: 1.5vw;
+      font-size: 1.5vw;
   }
 
   #nav i {
-    font-size: 1.5vw;
+      font-size: 1.5vw;
   }
 
 }
 
+#nav i {
+  font-weight: 100px;
+  font-size: 1rem;
+}
+
 #right a.login-btn {
   padding: 10px 20px;
-  background-color: black;
-  color: #fff;
+  background-color: #000000;
+  color: white;
   border-radius: 25px;
   font-size: 1rem;
   text-decoration: none;
@@ -97,11 +95,6 @@ body {
 #right a.login-btn:hover {
   color: black;
   background-color: #ffffff;
-}
-
-#nav i {
-  font-weight: 100px;
-  font-size: 1rem;
 }
 
 .internships-grid {
