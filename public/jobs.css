@@ -87,7 +87,7 @@ body{
     border-radius: 12px;
     box-shadow: 0 8px 15px pink;
     padding: 20px;
-    width: 1250px;
+    width: 85vw;
     text-align: center;
     transition: transform 0.6s, box-shadow 0.3s ease;
     cursor: pointer;
