@@ -154,7 +154,6 @@ body {
     font-family: Arial, sans-serif;
     transform-style: preserve-3d;
     animation: float 3s ease-in-out infinte;
-
 }
 
 .slide:hover {
@@ -389,11 +388,6 @@ body {
     margin: 20px 0;
 }
 
-.slide h3 {
-    font-size: 1.4vw;
-    font-weight: 400;
-    letter-spacing: -.5px;
-}
 
 .li {
     text-decoration: none;
