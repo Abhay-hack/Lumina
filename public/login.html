@@ -1,83 +1,114 @@
-<!-- public/login.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" href="./image/Lumina.ico" />
-    <title>Lumina - Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <link rel="stylesheet" href="login.css" />
-    <script src="validation.js" defer></script>
+    <title>Sign in & Sign up Form</title>
   </head>
   <body>
-    <div class="wrapper">
-      <h1>Sign In</h1>
-      <p id="error-message" style="color: red"></p>
-      <form id="form" action="/login" method="POST">
-        <div>
-          <label for="email-input">
-            <span>@</span>
-          </label>
-          <input
-            type="email"
-            name="email"
-            id="email-input"
-            placeholder="Email"
-            required
-          />
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form">
+            <h2 class="title">Sign in</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <input type="submit" value="Login" class="btn solid" />
+            <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Sign up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <input type="submit" class="btn" value="Sign up" />
+            <p class="social-text">Or Sign up with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
         </div>
-        <div class="password-container">
-          <label for="password-input">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24"
-              viewBox="0 -960 960 960"
-              width="24"
-            >
-              <path
-                d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm240-200q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80Z"
-              />
-            </svg>
-          </label>
-          <input
-            type="password"
-            name="password"
-            id="password-input"
-            placeholder="Password"
-            required
-          />
-          <img
-            src="./image/eye-slash.svg"
-            id="eye-icon"
-            alt="Eye Icon"
-            class="eye-icon"
-          />
-        </div>
+      </div>
 
-        <p>
-          <a href="forgot-password.html" class="forgot-password-link">Forgot Password?</a>
-        </p>
-        <button type="submit">Login</button>
-      </form>
-      <p>New here? <a href="signup.html">Create an Account</a></p>
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>New here ?</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+              ex ratione. Aliquid!
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              Sign up
+            </button>
+          </div>
+          <img src="image/logo.png" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>One of us ?</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              laboriosam ad deleniti.
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Sign in
+            </button>
+          </div>
+          <img src="image/register.png" class="image" alt="" />
+        </div>
+      </div>
     </div>
-    <div class="car"></div>
 
-    <script>
-      document
-        .getElementById("eye-icon")
-        .addEventListener("click", function () {
-          const passwordField = document.getElementById("password-input");
-          const eyeIcon = document.getElementById("eye-icon");
-
-          if (passwordField.type === "password") {
-            passwordField.type = "text"; // Show password
-            eyeIcon.src = "./image/eye.svg"; // Change to open eye icon
-          } else {
-            passwordField.type = "password"; // Hide password
-            eyeIcon.src = "./image/eye-slash.svg"; // Change to closed eye icon
-          }
-        });
-    </script>
+    <script src="login.js"></script>
   </body>
 </html>
