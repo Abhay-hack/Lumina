@@ -7,208 +7,130 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
         }
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        .navbar {
+            background-color: #FCE5B3;
+            padding: 25px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
-        h1 {
-            text-align: center;
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin: 0 15px;
+            transition: color 0.3s ease-in-out;
+        }
+        .navbar a:hover {
             color: #4CAF50;
         }
-        form {
-            display: flex;
-            flex-direction: column;
+        .login-btn {
+            background-color: black;
+            color: white !important; 
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            border: 2px solid white; 
+            text-align: center;
+            display: inline-block; 
+            transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
         }
-        label {
-            margin-top: 10px;
+        .login-btn:hover {
+            background-color: #333;
+            color: white !important; 
+        }
+        .logo {
+            font-family: 'Arial', sans-serif;
+            font-size: 24px;
             font-weight: bold;
         }
-        input, textarea, select {
-            margin-top: 5px;
+        .container {
+            width: 40%;
+            background-color: white;
+            padding: 30px;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        }
+        h2 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select, textarea {
+            width: 100%;
             padding: 10px;
+            margin-bottom: 15px;
             border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 16px;
+            border-radius: 5px;
         }
-        textarea {
-            resize: vertical;
-        }
-        button {
-            margin-top: 20px;
-            padding: 10px 15px;
-            font-size: 16px;
-            color: #fff;
+        .submit-btn {
             background-color: #4CAF50;
+            color: white;
+            padding: 10px;
             border: none;
-            border-radius: 4px;
+            border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            font-size: 16px;
+            width: 100%;
+            transition: background 0.3s ease-in-out;
         }
-        button:hover {
+        .submit-btn:hover {
             background-color: #45a049;
         }
-        .message {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 18px;
-            color: #4CAF50;
-            display: none;
-        }
-        
-
-        /* navbar */
-
- #nav {
-  display: flex;
-  align-items: center;
-  background-color: #f7e2b1ea;
-  justify-content: space-between;
-  width: 92%;
-  padding: 30px 50px;
-  height: 17%;
-
-}
-
-.icon {
-  font-size: medium;
-}
-
-#nav img {
-  width: 50%;
-  height: 80%;
-}
-
-#nav #right {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-#nav a {
-  text-decoration: none;
-  font-weight: 400;
-  color: black;
-  font-size: 0.8rem;
-  letter-spacing: -1px;
-  transition: font-size 0.3s;
-}
-
-#nav a:hover {
-  font-size: 2vw;
-}
-
-@media (min-width: 768px) {
-  #nav {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 30px 50px;
-  }
-
-  #nav img {
-    width: 100px;
-  }
-
-  #nav a {
-    font-size: 1.5vw;
-  }
-
-  #nav i {
-    font-size: 1.5vw;
-  }
-
-}
-
-#right a.login-btn {
-  padding: 10px 20px;
-  background-color: black;
-  color: #fff;
-  border-radius: 25px;
-  font-size: 1rem;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-#right a.login-btn:hover {
-  color: black;
-  background-color: #ffffff;
-}
-
-#nav i {
-  font-weight: 100px;
-  font-size: 1rem;
-}
-
     </style>
 </head>
-<body>
 
-    <div id="nav">
-        <a href="index.html"><img class="icon magnet" src="./image/lumina1.png" alt=""></a>
-        <div id="right">
-            <a href="jobs.html">Jobs</a>
-            <a href="internships.html">Internships</a>
-            <a href="mentorship.html">Mentorships</a>
-            <a href="resources.html">Resources</a>
-            <a href="events&webinar.html">Events/Webinars</a>
-            <a href="login.html" class="login-btn magnet">Login</a>
-            <!--
-            <i class="ri-user-3-line magnet"></i>
-        -->
+<body>
+    <div class="navbar">
+        <a href="index.html">
+            <img class="icon magnet" src="/public/image/image_lumina1.jpg" alt="Logo">
+        </a>
+        <div>
+            <a href="#">Jobs</a>
+            <a href="#">Internships</a>
+            <a href="#">Mentorships</a>
+            <a href="#">Resources</a>
+            <a href="#">Events/Webinars</a>
+            <a href="#" class="login-btn">Login</a>
         </div>
     </div>
 
-
     <div class="container">
-        <h1>Apply Now</h1>
-        <form id="applyForm">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-
+        <h2>Apply Now</h2>
+        <form>
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" placeholder="Enter your full name">
+            
             <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
+            <input type="email" id="email" placeholder="Enter your email">
+            
             <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-
+            <input type="tel" id="phone" placeholder="Enter your phone number">
+            
             <label for="qualification">Highest Qualification</label>
-            <select id="qualification" name="qualification" required>
-                <option value="">Select your qualification</option>
-                <option value="High School">High School</option>
-                <option value="Bachelor's">Bachelor's</option>
-                <option value="Master's">Master's</option>
-                <option value="PhD">PhD</option>
+            <select id="qualification">
+                <option>Select your qualification</option>
+                <option>High School</option>
+                <option>Bachelor's Degree</option>
+                <option>Master's Degree</option>
+                <option>PhD</option>
             </select>
-
-            <label for="message">Why do you want to apply?</label>
-            <textarea id="message" name="message" rows="5" placeholder="Tell us about yourself" required></textarea>
-
-            <button type="submit">Submit</button>
+            
+            <label for="reason">Why do you want to apply?</label>
+            <textarea id="reason" rows="4" placeholder="Tell us about yourself"></textarea>
+            
+            <button type="submit" class="submit-btn">Submit Application</button>
         </form>
-        <div class="message" id="successMessage">Thank you for applying! We'll get back to you soon.</div>
     </div>
-
-    <script>
-        const form = document.getElementById('applyForm');
-        const successMessage = document.getElementById('successMessage');
-
-        form.addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent form from reloading the page
-
-            // You can add form validation or send the form data to a server here
-            successMessage.style.display = 'block';
-
-            // Optionally reset the form
-            form.reset();
-        });
-    </script>
 </body>
 </html>
