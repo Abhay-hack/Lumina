@@ -8,118 +8,186 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(to bottom right, #E0F7FA, #FFF6E0);
+             background: linear-gradient(to bottom right, #38bbcd, #067881);
             margin: 0;
+            border: none;
             padding: 0;
         }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            background: rgb(247, 247, 178);
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-        }
-        h1 {
+         h1 {
             text-align: center;
-            color: #00695C;
+            color: #22a4c4;
+         }
+        .formbold-mb-5 {
+          margin-bottom: 28px;
+           padding: 8px;
         }
-        label {
-            display: block;
-            margin: 10px 0 5px;
-            font-weight: bold;
-            color: #00695C;
+        .formbold-pt-3 {
+          padding-top: 20px;
         }
-        input, textarea, select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 16px;
+        .formbold-main-wrapper {
+          display: flex;
+          align-items: center;
+          margin-left:480px;
+          margin-bottom: 170px;
         }
-        input:focus, textarea:focus, select:focus {
-            outline: none;
-            border: 1px solid #00695C;
-            box-shadow: 0 0 5px rgba(0, 105, 92, 0.5);
+      
+        .formbold-form-wrapper {
+           max-width: 570px;
+           width: 100%;
+           background-color: #EDDCD9;
+           padding: 30px;
+           border: 2px solid #264143;
+           box-shadow: 3px 4px 0px 1px #E99F4C;
+           margin-top: 30px;
+         }
+         .formbold-main-wrapper{
+           font-family: "Inter", Arial, Helvetica, sans-serif;
+           font-weight: 600;
+          border:none;
         }
-        button {
-            background: #00695C;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: 0.3s;
+         .formbold-form-label {
+           display: block;
+           font-weight: 600;
+          font-size: 16px;
+           color: #07074d;
+          margin-bottom: 10px;
         }
-        button:hover {
-            background: #00796B;
+         .formbold-form-label-2 {
+          font-weight: 600;
+           font-size: 20px;
+           margin-bottom: 15px;
         }
-
+       
+        .formbold-form-input {
+          width:90%;
+           padding: 15px 15px;
+          border-radius: 6px;
+          background: white;
+           font-weight: 500;
+           font-size: 16px;
+          color: black;
+           outline: none;
+           resize: none;
+          border: 2px solid #264143;
+           box-shadow: 3px 4px 0px 1px #E99F4C;
+        }
+        .formbold-form-input:focus {
+          border-color: #6a64f1;
+          color:black;
+        }
+      
+        .formbold-btn {
+           text-align: center;
+           padding: 15px 12px;
+           padding-left:10px;
+           border: none;
+           font-weight: 700;
+           font-size: 15px;
+           background: #176565;
+           border-radius: 10px;
+           box-shadow: 3px 3px 0px 0px #E99F4C;
+           color: black;
+           width: 90%;
+           cursor: pointer;
+           margin-left: 50px;
+        }
+         .formbold-btn:hover {
+             opacity: .9;
+        }
+         .formbold-form-input:focus{
+             transform: translateY(4px);
+           box-shadow: 1px 1px 0px 0px #E99F4C;
+        }
+         .formbold-btn:active {
+           transform: translateY(4px);
+           box-shadow: 1px 1px 0px 0px #E99F4C;
+         }
+         .formbold--mx-3 {
+          margin-left: -12px;
+           margin-right: -12px;
+        }
+         .formbold-px-3 {
+           padding-left: 12px;
+          padding-right: 12px;
+         }
+         .flex {
+          display: flex;
+         }
+         .flex-wrap {
+           flex-wrap: wrap;
+        }
+         .w-full {
+           width: 90%;
+         }
+         @media (min-width: 540px) {
+          .sm\:w-half {
+            width: 50%;
+          }
+        }
+  
         /* navbar */
-
-#nav {
+  
+  #nav {
   display: flex;
   align-items: center;
   background-color: #f7e2b1ea;
   justify-content: space-between;
-  width: 92%;
+  width: 95%;
   padding: 30px 50px;
   height: 17%;
-
-}
-
-.icon {
+  
+  }
+  
+  .icon {
   font-size: medium;
-}
-
-#nav img {
+  }
+  
+  #nav img {
   width: 50%;
   height: 80%;
-}
-
-#nav #right {
+  }
+  
+  #nav #right {
   display: flex;
   align-items: center;
   gap: 40px;
-}
-
-#nav a {
+  }
+  
+  #nav a {
   text-decoration: none;
   font-weight: 400;
   color: black;
   font-size: 0.8rem;
   letter-spacing: -1px;
   transition: font-size 0.3s;
-}
-
-#nav a:hover {
+  }
+  
+  #nav a:hover {
   font-size: 2vw;
-}
-
-@media (min-width: 768px) {
+  }
+  
+  @media (min-width: 768px) {
   #nav {
     flex-direction: row;
     justify-content: space-between;
     padding: 30px 50px;
   }
-
+  
   #nav img {
     width: 100px;
   }
-
+  
   #nav a {
     font-size: 1.5vw;
   }
-
+  
   #nav i {
     font-size: 1.5vw;
   }
-
-}
-
-#right a.login-btn {
+  
+  }
+  
+  #right a.login-btn {
   padding: 10px 20px;
   background-color: black;
   color: #fff;
@@ -127,19 +195,18 @@
   font-size: 1rem;
   text-decoration: none;
   font-weight: bold;
-}
-
-#right a.login-btn:hover {
+  }
+  
+  #right a.login-btn:hover {
   color: black;
   background-color: #ffffff;
-}
-
-#nav i {
+  }
+  
+  #nav i {
   font-weight: 100px;
   font-size: 1rem;
-}
-
-    </style>
+  }
+  </style>
 </head>
 <body>
 
@@ -152,36 +219,66 @@
             <a href="resources.html">Resources</a>
             <a href="events&webinar.html">Events/Webinars</a>
             <a href="login.html" class="login-btn magnet">Login</a>
-            <!--
-            <i class="ri-user-3-line magnet"></i>
-        -->
-        </div>
+      </div>
     </div>
-
-
     <div class="container">
-        <h1>Add Event/Webinar</h1>
-        <form>
-            <label for="event-title">Event Title</label>
-            <input type="text" id="event-title" placeholder="e.g., JavaScript Workshop" required>
-
-            <label for="date">Date</label>
-            <input type="date" id="date" required>
-
-            <label for="time">Time</label>
-            <input type="time" id="time" required>
-
-            <label for="location">Location</label>
-            <input type="text" id="location" placeholder="e.g., Remote or Physical Address">
-
-            <label for="eligibility">Eligibility</label>
-            <textarea id="eligibility" rows="4" placeholder="List the eligibility criteria here"></textarea>
-
-            <label for="description">Event Description</label>
-            <textarea id="description" rows="6" placeholder="Describe the event details"></textarea>
-
-            <button type="submit">Submit Event</button>
-        </form>
-    </div>
+      <form>
+        <div class="formbold-main-wrapper">
+          <div class="formbold-form-wrapper">
+            <form action="#" method="POST">
+              <div class="formbold-mb-5">
+                <h1>Add Event/Webinar</h1>
+                <label for="name" class="formbold-form-label"> Event Title </label>
+                <input type="text" name="name" id="name" placeholder="e.g.,JavaScript Workshop" class="formbold-form-input" />
+              </div>
+              <div class="flex flex-wrap formbold--mx-3">
+                <div class="form-container" style="display: flex; gap: 20px; flex-wrap: wrap;">
+                 <!-- Date Input -->
+                  <div class="w-full sm:w-half formbold-px-3" style="flex: 1;">
+                    <div class="formbold-mb-5 w-full">
+                      <label for="date" class="formbold-form-label" style="font-weight: bold;">Date</label>
+                      <input type="date" name="date" id="date" class="formbold-form-input" style="width: 100%; color: black;" />
+                    </div>
+                  </div>
+               
+                 <!-- Time Input -->
+                <div class="w-full sm:w-half formbold-px-3" style="flex: 1;">
+                 <div class="formbold-mb-5">
+                    <label for="time" class="formbold-form-label" style="font-weight: bold;">Time</label>
+                    <input type="time" name="time" id="time" class="formbold-form-input" style="width: 100%;" />
+                 </div> </div>
+             </div>
+               
+              <div class="w-full sm:w-half formbold-px-3">
+                <div class="formbold-mb-5">
+                  <label for="time" class="formbold-form-label"> Location </label>
+                  <input id="time" placeholder="e.g., Remote or Physical Address"  class="formbold-form-input"/>
+                </div>
+             </div>
+             <div class="form-container" style="display: flex; gap: 20px; flex-wrap: wrap;margin-bottom: 20px;">
+                 <!-- Eligibility Textarea -->
+                  <div class="w-full sm:w-half formbold-px-3" style="flex: 1;">
+                    <div class="formbold-mb-5" style="margin-left: 10px;">
+                      <label for="eligibility" class="formbold-form-label" style="font-weight: bold;">Eligibility</label>
+                      <textarea name="eligibility" id="eligibility" placeholder="List the eligibility criteria here" class="formbold-form-input" rows="6" cols="6" style="width: 100%; "></textarea>
+                    </div>
+                  </div>
+               
+                 <!-- Event Description Textarea -->
+                  <div class="w-full sm:w-half formbold-px-3" style="flex: 1;margin-bottom: 20px;">
+                    <div class="formbold-mb-5" style="margin-left: 10px;">
+                      <label for="EventDescription" class="formbold-form-label" style="font-weight: bold;">Description</label>
+                      <textarea name="EventDescription" id="EventDescription" placeholder="Describe the event details" class="formbold-form-input" rows="6" cols="30" style="width: 100%;"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                <button class="formbold-btn">Submit Event</button>
+               </div>
+            </form> 
+          </div>
+        </div>
+      </form>
+  </div>
 </body>
 </html>
